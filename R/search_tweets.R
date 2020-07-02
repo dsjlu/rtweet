@@ -353,7 +353,7 @@ search_tweets_ <- function(q = "",
   ## validate
   stopifnot(is_n(n), is.atomic(q), length(q) == 1L, is.atomic(max_id))
   ## number of loops
-  n.times <- ceiling(n / 100)
+  n.times <- ceiling(n / 500)
   if (n < 100) {
     count <- n
   } else {
